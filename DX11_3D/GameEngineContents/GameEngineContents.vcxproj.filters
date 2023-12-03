@@ -1,0 +1,120 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <ClCompile Include="PreCompile.cpp" />
+    <ClCompile Include="ContentsCore.cpp" />
+    <ClCompile Include="PlayLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="Player.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TitleLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayMap.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="Monster.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="TileMap.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="MainUIActor.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ReverseActor.cpp">
+      <Filter>Object</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentsSpriteRenderer.cpp">
+      <Filter>Render</Filter>
+    </ClCompile>
+    <ClCompile Include="ContentsControlWindow.cpp">
+      <Filter>GUI</Filter>
+    </ClCompile>
+    <ClCompile Include="MapEditorLevel.cpp">
+      <Filter>Level</Filter>
+    </ClCompile>
+    <ClCompile Include="PlayerEffect.cpp">
+      <Filter>Render\PostEffect</Filter>
+    </ClCompile>
+    <ClCompile Include="OldFilm.cpp">
+      <Filter>Render\PostEffect</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="PreCompile.h" />
+    <ClInclude Include="ContentsCore.h" />
+    <ClInclude Include="PlayLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="Player.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="TitleLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayMap.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="Monster.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsEnum.h">
+      <Filter>Global</Filter>
+    </ClInclude>
+    <ClInclude Include="TileMap.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="MainUIActor.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ReverseActor.h">
+      <Filter>Object</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsSpriteRenderer.h">
+      <Filter>Render</Filter>
+    </ClInclude>
+    <ClInclude Include="ContentsControlWindow.h">
+      <Filter>GUI</Filter>
+    </ClInclude>
+    <ClInclude Include="MapEditorLevel.h">
+      <Filter>Level</Filter>
+    </ClInclude>
+    <ClInclude Include="PlayerEffect.h">
+      <Filter>Render\PostEffect</Filter>
+    </ClInclude>
+    <ClInclude Include="OldFilm.h">
+      <Filter>Render\PostEffect</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Filter Include="Level">
+      <UniqueIdentifier>{c9a2e832-8d6b-49de-ac34-3e11f6f95c4b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Object">
+      <UniqueIdentifier>{5149ea30-97f1-47b8-922c-87826f277675}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Global">
+      <UniqueIdentifier>{ca09bba4-fac2-48d7-bd82-8680ddecfb32}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render">
+      <UniqueIdentifier>{68de699d-90d0-4d47-b373-7d816636e702}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Shader">
+      <UniqueIdentifier>{eacac3dc-b6db-445c-8e5f-d0c8a349f3d4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="GUI">
+      <UniqueIdentifier>{152ff9a9-9b28-4ff1-8a7f-ea288dfbcdc7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Render\PostEffect">
+      <UniqueIdentifier>{2b45010a-62fd-41e1-873b-18364b64e513}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <FxCompile Include="..\ContentsResources\Shader\ContentsTextureShader.fx">
+      <Filter>Shader</Filter>
+    </FxCompile>
+  </ItemGroup>
+</Project>
