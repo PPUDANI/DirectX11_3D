@@ -103,6 +103,7 @@ void GameEngineRenderUnit::ResSetting()
 void GameEngineRenderUnit::ResReset()
 {
 	Material->GeometryShaderReset();
+	ShaderResHelper.AllShaderResourcesReset();
 }
 
 

@@ -24,7 +24,7 @@ void GameEngineParticleRenderer::Start()
 	for (size_t i = 0; i < ParticleUpdateInfoValue.ParticleMaxCount; i++)
 	{
 		Data[i].CurTime = 0.0f;
-		Data[i].MaxTime = 10.0f;
+		Data[i].MaxTime = 1.0f;
 		Data[i].Dir = float4::ZERO;
 		Data[i].RelativePos = float4::ZERO;
 		Data[i].Speed = 100.0f;

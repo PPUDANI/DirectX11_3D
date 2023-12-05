@@ -43,7 +43,7 @@ void ParticleUpdate_CS(uint3 _id : SV_DispatchThreadID)
             ParticleInfoBuffer[_id.x].RelativePos.xy = float2(cos(Random), sin(Random)) * RandomVector.y * SpawnRange;
             ParticleInfoBuffer[_id.x].RelativePos.z = 0.0f;
             
-            ParticleInfoBuffer[_id.x].Dir.xy = -normalize(ParticleInfoBuffer[_id.x].RelativePos.xy);
+            ParticleInfoBuffer[_id.x].Dir.xy = normalize(ParticleInfoBuffer[_id.x].RelativePos.xy);
 
             if (0 != IsWorldSpawn)
             {

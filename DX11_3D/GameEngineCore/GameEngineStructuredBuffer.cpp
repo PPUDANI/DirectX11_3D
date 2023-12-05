@@ -73,6 +73,9 @@ void GameEngineStructuredBuffer::GSReset(UINT _Slot)
 
 void GameEngineStructuredBuffer::CSReset(UINT _Slot)
 {
+	//ID3D11ShaderResourceView* NullSRV = nullptr;
+	//GameEngineCore::GetContext()->CSSetShaderResources(_Slot, 1, &NullSRV);
+
 	UINT i = -1;
 	ID3D11UnorderedAccessView* Nullptr = nullptr;
 	GameEngineCore::GetContext()->CSSetUnorderedAccessViews(_Slot, 1, &Nullptr, &i);
@@ -90,6 +93,18 @@ void GameEngineStructuredBuffer::Release()
 	{
 		SRV->Release();
 		SRV = nullptr;
+	}
+
+	if (nullptr != WriteBuffer)
+	{
+		WriteBuffer->Release();
+		WriteBuffer = nullptr;
+	}
+
+	if (nullptr != ReadBuffer)
+	{
+		ReadBuffer->Release();
+		ReadBuffer = nullptr;
 	}
 	BufferRelease();
 }
@@ -245,9 +260,9 @@ void GameEngineStructuredBuffer::ChangeData(const void* _Data, size_t _Size)
 void GameEngineStructuredBuffer::SetData(void* _pSrc, size_t _Count)
 {
 	// 공간이 모자라면 추가할당하면서 초기화한다.
-	if (DataCount < _Count)
+	if (DataCount < static_cast<int>(_Count))
 	{
-		CreateResize(DataSize, _Count, Type, _pSrc);
+		CreateResize(DataSize, static_cast<int>(_Count), Type, _pSrc);
 		return;
 	}
 

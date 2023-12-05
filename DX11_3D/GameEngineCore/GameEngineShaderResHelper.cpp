@@ -152,6 +152,9 @@ void GameEngineStructedBufferSetter::Reset()
 	case ShaderType::Pixel:
 		Res->VSReset(BindPoint);
 		break;
+	case ShaderType::Geometry:
+		Res->GSReset(BindPoint);
+		break;
 	case ShaderType::Compute:
 		Res->CSReset(BindPoint);
 		break;

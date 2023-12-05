@@ -75,10 +75,10 @@ void ParticleRender_GS(point GameEngineParticleVSOut _In[1], inout TriangleStrea
     
     // WVP가 다 곱해진것.
 
-    outPut[0].UV.xy = float2(0.0f, 1.0f);
-    outPut[1].UV.xy = float2(1.0f, 1.0f);
-    outPut[2].UV.xy = float2(1.0f, 0.0f);
-    outPut[3].UV.xy = float2(0.0f, 0.0f);
+    outPut[0].UV.xy = float2(1.0f, 1.0f);
+    outPut[1].UV.xy = float2(0.0f, 1.0f);
+    outPut[2].UV.xy = float2(0.0f, 0.0f);
+    outPut[3].UV.xy = float2(1.0f, 0.0f);
 
     _OutStream.Append(outPut[0]);
     _OutStream.Append(outPut[1]);
